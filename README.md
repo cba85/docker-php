@@ -1,6 +1,6 @@
 # Docker PHP
 
-This project uses a sample app name `myapp` and user name `toto`
+This project uses a sample app names `myapp` and a sample user named `toto`
 
 ## Usage
 
