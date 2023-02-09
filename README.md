@@ -1,5 +1,7 @@
 # Docker PHP
 
+A template to use Docker with PHP (Laravel, Slim...).
+
 This project uses a sample app names `myapp` and a sample user named `toto`
 
 ## Usage
@@ -25,6 +27,10 @@ $ docker-compose exec app rm -rf vendor composer.lock
 $ docker-compose exec app composer install
 ```
 
+### Old Composer version
+
+Replace `latest` for `2.2` in `COPY --from=composer:latest /usr/bin/composer /usr/bin/composer` in `Dockerfile`
+
 ## Commands
 
 To launch a bash command on Docker:
@@ -32,10 +38,6 @@ To launch a bash command on Docker:
 ```
 $ docker-compose exec app php -v
 ```
-
-### Old Composer version
-
-Replace `latest` for `2.2` in `COPY --from=composer:latest /usr/bin/composer /usr/bin/composer` in `Dockerfile`
 
 ## PHP
 
