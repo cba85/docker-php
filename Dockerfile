@@ -1,5 +1,5 @@
 # Get PHP
-FROM php:8.2-fpm
+FROM php:8.3-fpm
 
 # Arguments defined in docker-compose.yml
 ARG user
